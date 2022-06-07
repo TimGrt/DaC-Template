@@ -1,0 +1,88 @@
+# MkDocs configuration file
+site_name: CC Documentation as Code Template
+copyright: Copyright &copy; Computacenter 2022
+extra:
+  social:
+    - icon: fontawesome/brands/git
+      link: https://gitlab.ccloud.ninja/tgruetzmacher/documentation-as-code
+      name: Projekt im Gitlab
+    - icon: fontawesome/brands/docker
+      link: https://gitlab.ccloud.ninja/tgruetzmacher/documentation-as-code/-/blob/main/dockerfiles/slim/Dockerfile
+      name: Container Definition
+extra_css:
+  - stylesheets/tables.css
+edit_uri: ""
+theme:
+  name: material
+  # custom_dir: docs/overrides
+  icon:
+    repo: fontawesome/brands/github
+  logo: assets/computacenter-logo.png
+  language: de
+  favicon: assets/computacenter-logo.png
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+  palette:
+    - scheme: default
+      primary: blue
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+plugins:
+  - search:
+      lang: de
+      separator: '[\s]'
+  - awesome-pages
+  - autolinks
+  - mermaid2:
+      arguments:
+        theme: |
+          ^(JSON.parse(__md_get("__palette").index == 1)) ? 'dark' : 'light'
+        securityLevel: 'loose'
+extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+  - extra/refresh-on-toggle-dark-light.js
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - extra/tablesort.js
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
+  - tables
+repo_url: https://github.com/TimGrt/DaC-Template
+repo_name: timgrt/dac-template
+# Navigation definition
+nav:
+  - "Home": index.md
+  - "MkDocs":
+    - mkdocs/mkdocs-informationen.md
+    - mkdocs/markdown-how-to.md
+  - "Docker":
+    - docker/docker.md
+  - "CI/CD":
+    - ci-cd/ci-cd.md
+  - "Entwicklungs-Umgebung":
+    - entwicklungs-umgebung/live-preview.md
