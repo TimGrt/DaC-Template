@@ -85,6 +85,7 @@ nav:
   - "Home": index.md
   - "MkDocs":
     - mkdocs/mkdocs-informationen.md
+    - mkdocs/mkdocs-elemente.md
     - mkdocs/markdown-how-to.md
   - "Docker":
     - docker/docker.md
