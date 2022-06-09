@@ -1,4 +1,5 @@
-![CC Logo](assets/computacenter.png)
+![CC Logo](assets/computacenter.png#only-light)
+![CC Logo](assets/computacenter-white.png#only-dark)
 
 # "Documentation-as-Code" in Docker 
 

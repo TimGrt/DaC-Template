@@ -1,6 +1,6 @@
 beautifulsoup4==4.9.3
 mkdocs
-mkdocs-material==7.3.6
+mkdocs-material
 mkdocs-autolinks-plugin
 mkdocs-awesome-pages-plugin
 mkdocs-mermaid2-plugin
