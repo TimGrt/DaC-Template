@@ -14,7 +14,7 @@ extra_css:
 edit_uri: ""
 theme:
   name: material
-  # custom_dir: docs/overrides
+  custom_dir: docs/overrides
   icon:
     repo: fontawesome/brands/github
   logo: assets/computacenter-logo.png
