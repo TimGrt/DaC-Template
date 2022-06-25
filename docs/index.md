@@ -6,7 +6,7 @@
 Hier findet sich die komplette Dokumentation und Anweisungen für die Installation, Konfiguration und Nutzung des Templates.
 
 !!! tip "Versionierung"
-    Das Template wird ständig aktualisiert, die aktuelle Version ist **0.2.0** am 09.06.2022.
+    Das Template wird ständig aktualisiert, zuletzt am **{{ git_revision_date_localized }}**.
 
 ## Idee
 
