@@ -43,6 +43,8 @@ plugins:
       separator: '[\s]'
   - awesome-pages
   - autolinks
+  - git-revision-date-localized:
+      locale: de
   - mermaid2:
       arguments:
         theme: |
