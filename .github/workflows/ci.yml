@@ -36,7 +36,7 @@ jobs:
 
       - name: Build the "slim" image
         run: |
-          docker build -t dac:slim dockerfiles/slim/Dockerfile .
+          docker build -t dac:slim -f dockerfiles/slim/Dockerfile .
 
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
