@@ -43,8 +43,9 @@ plugins:
       separator: '[\s]'
   - awesome-pages
   - autolinks
-  - git-revision-date-localized:
-      locale: de
+  # Currently commented, see issue https://github.com/TimGrt/DaC-Template/issues/3#issue-1299752114
+  # - git-revision-date-localized:
+  #     locale: de
   - mermaid2:
       arguments:
         theme: |
