@@ -1,20 +1,5 @@
 # Docker
 
-Das folgende Diagram zeigt den Prozess zur Erstellung eine neuen Container-Images mit der aktuellsten Dokumentation:
-
-```mermaid
-graph TD;
-
-    a1["requirements.txt kopieren"];
-    a2["Python Dependencies aus requirements.txt installieren"];
-    a3["Markdown Dokumentations-Dateien kopieren (docs-Ordner)"];
-    a4["MkDocs Konfigurations-Datei kopieren"];
-    a5["Dokumentation bauen"];
-    a6["Webserver starten"];
-
-    a1-->a2-->a3-->a4-->a5-->a6;
-```
-
 ## Image-Varianten
 
 Das Docker Image wird in zwei unterschiedlichen Varianten angeboten, in beiden Varianten wird die Dokumentation als Webserver bereitgestellt. Auch die Funktionalitäten in der Web-Version (z.B. selbstständiges sortieren von Tabellen, gerenderte Mermaid-Diagramme, etc.) unterscheiden sich nicht. Der große Unterschied ist die Generierung einer PDF aus der kompletten Dokumentation, diese ist über den Webserver abrufbar.  
@@ -72,7 +57,7 @@ docker run -d -p 8080:80/tcp --name docs documentation:slim
 
 ### *PDF*-Variante
 
-Die folgende Container-Definition wird für die *Slim*-Variante verwendet:
+Die folgende Container-Definition wird für die *PDF*-Variante verwendet:
 
 ```dockerfile
 FROM python:3.8-slim
@@ -122,10 +107,27 @@ Die *PDF*-Variante wird **mit** PDF-Generierung realisiert.
 
 Das Docker Image muss mit der aktuellsten Version der Dokumentation gebaut werden:
 ```bash
-docker build -t documentation:slim -f dockerfiles/slim/Dockerfile .
+docker build -t documentation:pdf -f dockerfiles/pdf/Dockerfile .
 ```
 
 Container aus aktuellem Image starten, der Webserver wird hier auf Port 8080 verfügbar gemacht:
 ```bash
-docker run -d -p 8080:80/tcp --name docs documentation:slim
+docker run -d -p 8080:80/tcp --name docs documentation:pdf
+```
+
+## Build Prozess
+
+Das folgende Diagram zeigt den Prozess zur Erstellung eine neuen Container-Images mit der aktuellsten Dokumentation:
+
+```mermaid
+graph TD;
+
+    a1["requirements.txt kopieren"];
+    a2["Python Dependencies aus requirements.txt installieren"];
+    a3["Markdown Dokumentations-Dateien kopieren (docs-Ordner)"];
+    a4["MkDocs Konfigurations-Datei kopieren"];
+    a5["Dokumentation bauen"];
+    a6["Webserver starten"];
+
+    a1-->a2-->a3-->a4-->a5-->a6;
 ```
