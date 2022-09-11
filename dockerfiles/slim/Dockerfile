@@ -1,4 +1,4 @@
-FROM python:3.8-slim
+FROM python:3-slim
 
 WORKDIR /tmp
 
@@ -8,6 +8,15 @@ COPY dockerfiles/slim/requirements.txt .
 # Update pip and install Python dependencies
 RUN python3 -m pip install --no-cache-dir -U pip
 RUN python3 -m pip install --no-cache-dir -r requirements.txt
+
+# Install Git executable and copy .git folder for git-revision-date-localized-plugin
+RUN apt-get update \
+ && apt-get install --no-install-recommends -y git\
+ && apt-get autoremove \
+ && apt-get clean \
+ && rm -rf /var/lib/apt/lists/*
+
+COPY .git .git
 
 # Copy documentation source files to working directory
 COPY docs docs

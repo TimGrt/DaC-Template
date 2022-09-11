@@ -8,11 +8,8 @@ Eine vollständige Übersicht inklusive Codebeispielen findet sich [hier](https:
 Admonitions, auch _Call-Outs_ genannt, sind eine gute Wahl um zusätzliche Inhalte einzufügen, ohne den Dokumentfluss wesentlich zu unterbrechen. MkDocs bietet mehrere verschiedene Arten von Admonitions und ermöglicht Verschachtelung beliebiger Inhalte.
 
 ???+ success annotate "Admonition"
-
-      Es gibt eine große Anzahl (1) [Typen von Admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types), die alle häufigen Nutzungszwecke abdecken - zum Beipiel `alert`, `warning`, `info` und `success`.(2)
-
-1:    :man_raising_hand: Die [MKDocs Material-Dokumentation](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types) ist sehr gut geschrieben und enthält viele Beispiele für Admonitions
-2:    Diese Anmerkungen lassen sich ebenfalls sehr leicht in Markdown schreiben und integrieren.
+    Es gibt eine große Anzahl [Typen von Admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types), die alle häufigen Nutzungszwecke abdecken.  
+    Beipiele sind `alert`, `warning`, `info` und `success`.
 
 ## Codeblöcke
 
@@ -71,14 +68,14 @@ Besonders praktisch für die Darstellungen von Code für verschiedene Umgebungen
 
 === "RHEL"
 
-     ```
+     ```bash
      yum install python3-pip -y
      ```
 
 === "Ubuntu"
 
-     ```
-     $ sudo apt install python3-pip
+     ```bash
+     sudo apt install python3-pip
      ```
 
 === "Solaris"

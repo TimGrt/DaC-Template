@@ -1,7 +1,9 @@
-![CC Logo](assets/computacenter.png#only-light)
-![CC Logo](assets/computacenter-white.png#only-dark)
-
 # "Documentation-as-Code" in Docker 
+
+<figure markdown>
+  ![CC Logo](assets/computacenter.png){ width="500" }
+  <figcaption></figcaption>
+</figure>
 
 Hier findet sich die komplette Dokumentation und Anweisungen für die Installation, Konfiguration und Nutzung des Templates.
 
