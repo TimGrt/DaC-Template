@@ -12,7 +12,7 @@ extra:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/tables.css
-edit_uri: ""
+#edit_uri: ""
 theme:
   name: material
   # custom_dir: docs/overrides
@@ -20,7 +20,7 @@ theme:
     repo: fontawesome/brands/github
   logo: assets/computacenter-logo-white.png
   language: de
-  favicon: assets/computacenter-logo-white.png
+  favicon: assets/computacenter-logo.png
   features:
     - navigation.indexes
     - navigation.instant
@@ -90,6 +90,7 @@ repo_name: timgrt/dac-template
 # Navigation definition
 nav:
   - "Home": index.md
+  - "1hDD": 1hDD/1hDD-demo.md
   - "MkDocs":
     - mkdocs/mkdocs-informationen.md
     - mkdocs/mkdocs-elemente.md

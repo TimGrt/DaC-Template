@@ -6,6 +6,11 @@ Das Docker Image wird in zwei unterschiedlichen Varianten angeboten, in beiden V
 Für die PDF-Generierung sind eine Anzahl an zusätzlichen RPM- und Python-Paketen notwendig, dies führt zu einem größeren Image (*~170* MB vs. *~765* MB).  
 Wenn eine PDF nicht notwendig ist, sollte das *slim*-Image verwendet werden.
 
+Variante | Größe
+-------- | -----
+slim     | ~170 MB
+pdf      | ~765 MB
+
 ### *Slim*-Variante
 
 Die folgende Container-Definition wird für die *Slim*-Variante verwendet:
