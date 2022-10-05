@@ -12,7 +12,7 @@ extra:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/tables.css
-#edit_uri: ""
+edit_uri: edit/main/docs/
 theme:
   name: material
   # custom_dir: docs/overrides
