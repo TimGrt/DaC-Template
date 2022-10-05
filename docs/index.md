@@ -1,4 +1,4 @@
-# "Documentation-as-Code" in Docker 
+# Technische Dokumentation "as-Code"
 
 <figure markdown>
   ![CC Logo](assets/computacenter.png){ width="500" }

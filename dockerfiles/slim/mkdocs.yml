@@ -90,7 +90,6 @@ repo_name: timgrt/dac-template
 # Navigation definition
 nav:
   - "Home": index.md
-  - "1hDD": 1hDD/1hDD-demo.md
   - "MkDocs":
     - mkdocs/mkdocs-informationen.md
     - mkdocs/mkdocs-elemente.md
