@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../../assets/computacenter-logo.png" rel="icon"/>
 <meta content="mkdocs-1.4.0, mkdocs-material-8.5.6" name="generator"/>
-<title>Pipeline - CC "Documentation as Code" Template</title>
+<title>1hDD - CC "Documentation as Code" Template</title>
 <link href="../../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -23,7 +23,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#pipeline">
+<a class="md-skip" href="#1h-demo">
           Zum Inhalt
         </a>
 </div>
@@ -47,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Pipeline
+              1hDD
             
           </span>
 </div>
@@ -116,7 +116,7 @@
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../1hDD/1hdd-demo/">
+<a class="md-tabs__link md-tabs__link--active" href="./">
       1hDD
     </a>
 </li>
@@ -131,7 +131,7 @@
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href="./">
+<a class="md-tabs__link" href="../../ci-cd/ci-cd/">
         CI/CD
       </a>
 </li>
@@ -171,8 +171,9 @@
         Home
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../1hDD/1hdd-demo/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
         1hDD
       </a>
 </li>
@@ -226,8 +227,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
 <label class="md-nav__link" for="__nav_5">
           CI/CD
           <span class="md-nav__icon md-icon"></span>
@@ -238,33 +239,10 @@
           CI/CD
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          Pipeline
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ci-cd/ci-cd/">
         Pipeline
       </a>
-<nav aria-label="Inhaltsverzeichnis" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#github-pages">
-    Github Pages
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#gitlab">
-    Gitlab
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -298,93 +276,29 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Inhaltsverzeichnis" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#github-pages">
-    Github Pages
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#gitlab">
-    Gitlab
-  </a>
-</li>
-</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/TimGrt/DaC-Template/edit/main/docs/ci-cd/ci-cd.md" title="Seite editieren">
+<a class="md-content__button md-icon" href="https://github.com/TimGrt/DaC-Template/edit/main/docs/1hDD/1hdd-demo.md" title="Seite editieren">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<h1 id="pipeline">Pipeline</h1>
-<h2 id="github-pages">Github Pages</h2>
-<p>Für einen automatischen Rebuild der Dokumentation in Github Pages durch Github Actions muss im Projekt-Hauptverzeichnis die Datei <code>.github/workflows</code> erstellt werden</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nn">---</span><span class="w"></span>
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deploy MkDocs to Github pages</span><span class="w"></span>
-<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nt">on</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span><span class="nt">workflow_dispatch</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span><span class="w"></span>
-<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">  </span><span class="nt">pull_request</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span><span class="w"></span>
-<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="nt">jobs</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span><span class="w"></span>
-<a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span><span class="w"></span>
-<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-python@v2</span><span class="w"></span>
-<a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">          </span><span class="nt">python-version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.x</span><span class="w"></span>
-<a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip3 install -r requirements.txt</span><span class="w"> </span>
-<a href="#__codelineno-0-20" id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span><span class="w"></span>
+<h1 id="1h-demo">1h Demo</h1>
+<p>Schön dass ihr alle da seid!</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>mkdocs serve
 </code></pre></div>
-<p>Hier wird bei jedem Push oder Pull-Request gegen den <em>main</em>-Branch (oder durch einen manuellen Trigger) die Pipeline ausgeführt.</p>
-<h2 id="gitlab">Gitlab</h2>
-<p>Eine mögliche Pipeline ausgeführt über einen Gitlab-Runner könnte folgendermaßen aussehen, die Datei muss als <code>.gitlab-ci.yml</code> im Projekt-Hauptverzeichnis hinterlegt sein:</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">variables</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="nt">GIT_STRATEGY</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">clone</span><span class="w"></span>
-<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a>
-<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="nt">stages</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">build</span><span class="w"></span>
-<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a>
-<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="nt">Build and deploy</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">  </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">build</span><span class="w"></span>
-<a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">  </span><span class="nt">only</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span><span class="w"></span>
-<a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">web</span><span class="w"></span>
-<a href="#__codelineno-1-12" id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">  </span><span class="nt">script</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-1-13" id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">'echo</span><span class="nv"> </span><span class="s">-e</span><span class="nv"> </span><span class="s">"###</span><span class="nv"> </span><span class="s">Build</span><span class="nv"> </span><span class="s">new</span><span class="nv"> </span><span class="s">instance</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">Docker-compose.</span><span class="nv"> </span><span class="s">###"'</span><span class="w"></span>
-<a href="#__codelineno-1-14" id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">'docker-compose</span><span class="nv"> </span><span class="s">up</span><span class="nv"> </span><span class="s">-d</span><span class="nv"> </span><span class="s">--build'</span><span class="w"></span>
-<a href="#__codelineno-1-15" id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">  </span><span class="nt">tags</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-1-16" id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">handbuch</span><span class="w"></span>
-</code></pre></div>
-<p>Hier wird ein <em>docker-compose</em>-File angesprochen, in welchem der Image-Rebuild und Start eines Docker-Containers aus diesem Build definiert ist:</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">"3.3"</span><span class="w"></span>
-<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>
-<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="nt">services</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w"> </span><span class="nt">web</span><span class="p">:</span><span class="w"></span>
-<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">  </span><span class="nt">build</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.</span><span class="w"></span>
-<a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">handbuch</span><span class="w"></span>
-<a href="#__codelineno-2-7" id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">  </span><span class="nt">ports</span><span class="p">:</span><span class="w"> </span>
-<a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"13000:80"</span><span class="w"></span>
-<a href="#__codelineno-2-9" id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">  </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">always</span><span class="w"></span>
-<a href="#__codelineno-2-10" id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">  </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">betriebshandbuch</span><span class="w"></span>
-</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Das ist wichtiger Code!</p>
+</div>
 <hr/>
 <div class="md-source-file">
 <small>
     
       Letztes Update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">7. Juni 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">7. Oktober 2022</span>
 </small>
 </div>
 </article>
@@ -397,7 +311,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Fußzeile" class="md-footer__inner md-grid">
-<a aria-label="Zurück: Docker" class="md-footer__link md-footer__link--prev" href="../../docker/docker/" rel="prev">
+<a aria-label="Zurück: Home" class="md-footer__link md-footer__link--prev" href="../.." rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -406,17 +320,17 @@
 <span class="md-footer__direction">
                 Zurück
               </span>
-              Docker
+              Home
             </div>
 </div>
 </a>
-<a aria-label="Weiter: Live-Preview" class="md-footer__link md-footer__link--next" href="../../entwicklungs-umgebung/live-preview/" rel="next">
+<a aria-label="Weiter: Allgemeine Information zu MkDocs" class="md-footer__link md-footer__link--next" href="../../mkdocs/mkdocs-informationen/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Weiter
               </span>
-              Live-Preview
+              Allgemeine Information zu MkDocs
             </div>
 </div>
 <div class="md-footer__button md-icon">
